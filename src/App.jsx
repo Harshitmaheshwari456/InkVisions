@@ -319,7 +319,7 @@ const App = () => {
                 </div>
               </div>
             </div>
-            <div className="flex justify-center m-5 py-8">
+            {/* <div className="flex justify-center m-5 py-8">
               <div className="w-full max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold mb-6 text-center">
                   How InkVisions Works
@@ -340,7 +340,7 @@ const App = () => {
                   experience
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
         );
     }
