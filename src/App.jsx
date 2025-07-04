@@ -5,12 +5,11 @@ import Footer from "./utlis/footer";
 import Lottie from "react-lottie";
 import * as animationData from "./animations/animations.json";
 
-import ThemeToggle from './utlis/themetoggler';
+import ThemeToggle from "./utlis/themetoggler";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import Pricing from "./pages/Pricing";
 import Contact from "./pages/Contact";
-
 
 const App = () => {
   const [youtubeID] = useState("eGSUvfVt3k4");
@@ -22,44 +21,44 @@ const App = () => {
       preserveAspectRatio: "xMidYMid slice",
     },
   };
-  
+
   // Modified state to handle multiple pages
   // 'landing' - Landing page
   // 'home' - Home page
   // 'about', 'services', 'pricing', 'contact' - Other pages
-  const [currentPage, setCurrentPage] = useState('landing');
+  const [currentPage, setCurrentPage] = useState("landing");
 
   // Function to render the correct page based on currentPage state
   const renderPage = () => {
-    switch(currentPage) {
-      case 'home':
+    switch (currentPage) {
+      case "home":
         return <Home />;
-      case 'about':
+      case "about":
         return <About />;
-      case 'services':
+      case "services":
         return <Services />;
-      case 'pricing':
+      case "pricing":
         return <Pricing />;
-      case 'contact':
+      case "contact":
         return <Contact />;
-      case 'landing':
+      case "landing":
       default:
         return (
           <div>
             <div className="flex flex-wrap m-3 justify-around align-middle">
               <div className="max-w-xs py-6 my-9">
                 <div className="text-4xl font-bold">
-                  Painting Stories with Page Palette
+                  Painting Stories with InkVisions
                 </div>
                 <div className="middle py-5">
-                  Page Palette brings your eBook to life by generating images from
+                  InkVisions brings your eBook to life by generating images from
                   selected paragraphs, enriching your reading experience.
                 </div>
                 <div className="last flex my-4">
                   <div className="btn ">
                     <button
                       onClick={() => {
-                        setCurrentPage('home');
+                        setCurrentPage("home");
                       }}
                       className="text-white px-6 py-3 bg-yellow-600 dark:bg-teal-700 hover:bg-slate-800 hover:dark:bg-teal-800 rounded  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm text-center inline-flex items-center"
                     >
@@ -323,13 +322,13 @@ const App = () => {
             <div className="flex justify-center m-5 py-8">
               <div className="w-full max-w-4xl mx-auto">
                 <h2 className="text-2xl font-bold mb-6 text-center">
-                  How Page Palette Works
+                  How InkVisions Works
                 </h2>
                 <div className="relative overflow-hidden pb-[56.25%] rounded-lg shadow-lg">
                   <iframe
                     className="absolute top-0 left-0 w-full h-full"
                     src={`https://youtube.com/embed/${youtubeID}?autoplay=0`}
-                    title="Page Palette Tutorial"
+                    title="InkVisions Tutorial"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
@@ -337,7 +336,7 @@ const App = () => {
                   ></iframe>
                 </div>
                 <p className="text-center mt-4 text-gray-600 dark:text-gray-300">
-                  Learn how to use Page Palette to transform your eBook reading
+                  Learn how to use InkVisions to transform your eBook reading
                   experience
                 </p>
               </div>
@@ -356,10 +355,10 @@ const App = () => {
     <div className="bg-white border-gray-200 dark:bg-teal-950 dark:text-white">
       {/* Pass the navigation function to Navbar */}
       <Navbar navigateTo={navigateTo} currentPage={currentPage} />
-      
+
       {/* Render the appropriate page based on state */}
       {renderPage()}
-      
+
       <Footer />
     </div>
   );

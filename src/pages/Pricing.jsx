@@ -44,7 +44,7 @@ const Pricing = () => {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold mb-4">Pricing Plans</h1>
         <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-          Choose the perfect plan to enjoy Page Palette to the fullest.
+          Choose the perfect plan to enjoy InkVisions to the fullest.
         </p>
       </div>
 
@@ -53,7 +53,9 @@ const Pricing = () => {
           <div
             key={index}
             className={`p-8 rounded-2xl shadow-lg transition-transform transform hover:scale-105 ${
-              plan.highlight ? "bg-yellow-500 text-white" : "bg-gray-100 dark:bg-gray-800"
+              plan.highlight
+                ? "bg-yellow-500 text-white"
+                : "bg-gray-100 dark:bg-gray-800"
             }`}
           >
             <h2 className="text-2xl font-bold mb-4">{plan.name}</h2>

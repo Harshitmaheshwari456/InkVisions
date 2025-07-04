@@ -42,7 +42,7 @@ const Contact = () => {
           Contact Us
         </h1>
         <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mt-4">
-          Have questions about Page Palette? We’re happy to help! Use the form
+          Have questions about InkVisions? We’re happy to help! Use the form
           below or reach out via email.
         </p>
       </motion.div>
