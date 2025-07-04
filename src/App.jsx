@@ -65,16 +65,6 @@ const App = () => {
                       Get Started
                     </button>
                   </div>
-                  <div className="link flex">
-                    <a
-                      className="font-semibold py-3 px-6 hover:underline"
-                      href="https://www.youtube.com/watch?v=eGSUvfVt3k4"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Watch Video Tutorial
-                    </a>
-                  </div>
                 </div>
               </div>
               <div className="lotte">
